@@ -4,10 +4,12 @@ import { body } from 'express-validator';
 import jwt from 'jsonwebtoken';
 import { buildErrors, mockResponse } from 'src/test-utils';
 import supertest from 'supertest';
-import { authorize, guardValidation } from '.';
+// import { authorize, guardValidation } from '.';
+import { guardValidation } from '.';
 
 const chance = new Chance();
 
+/*
 describe('authorize', () => {
     let request: Partial<Request>;
     let response: Response;
@@ -57,7 +59,7 @@ describe('authorize', () => {
         expect(next).toHaveBeenCalled();
     });
 });
-
+*/
 describe('guardValidation', () => {
     let request: Partial<Request>;
     let response: Response;
